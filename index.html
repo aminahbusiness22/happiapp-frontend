@@ -38,10 +38,11 @@
                     fetchJson.forEach((itemData) => {
                         temp += "<tr>";
                         temp += "<td>" + no++ + "</td>";
-                        temp += "<td>" + button + "</td>";
+                        
                         temp += "<td>" + itemData.judul + "</td>";
                         temp += "<td>" + itemData.penerbit + "</td>";
-                        temp += "<td>" + itemData.jumlah_halaman + "</td></tr>";
+                        temp += "<td>" + itemData.jumlah_halaman + "</td>";
+                        temp += "<td>" + button + "</td></tr>";
                     });
                     document.getElementById('data').innerHTML = temp;
                     }
