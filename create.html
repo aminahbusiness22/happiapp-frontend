@@ -74,7 +74,7 @@
         thisForm.addEventListener('submit', async function (e) {
             e.preventDefault();
             const formData = new FormData(thisForm).entries()
-            const response = await fetch('http://54.168.122.141:5000/books', {
+            const response = await fetch('http://43.206.120.89:5000/books', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(Object.fromEntries(formData))
